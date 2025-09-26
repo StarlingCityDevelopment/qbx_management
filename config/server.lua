@@ -15,5 +15,11 @@ return {
             rotation = 0.0,
             type = 'job',
         },
+        taxi = {
+            coords = vec3(-1243.15, -277.85, 43.8),
+            size = vec3(0.5, 0.5, 0.5),
+            rotation = 0.0,
+            type = 'job',
+        },
     },
 }
