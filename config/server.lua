@@ -4,8 +4,10 @@ return {
     formatDateTime = '%m-%d-%Y %H:%M',
 
     -- While the config boss menu creation still works, it is recommended to use the runtime export instead.
+    -- Single menu: { coords = ..., size = ..., rotation = ..., type = ... }
+    -- Multiple menus: { { coords = ..., size = ..., rotation = ..., type = ... }, { ... }  }
     ---@alias GroupName string
-    ---@type table<GroupName, ZoneInfo>
+    ---@type table<GroupName, ZoneInfo|ZoneInfo[]>
     menus = {
         dailyglobe = {
             coords = vec3(-296.15, -632.75, 45.35),
