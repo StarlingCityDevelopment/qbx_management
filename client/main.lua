@@ -221,6 +221,14 @@ function OpenBossMenu(groupType)
                 showHireMenu(groupType)
             end,
         },
+        {
+            title = 'Gérer le service',
+            description = "Vérifier le statut d'activité des employés",
+            icon = 'user-clock',
+            onSelect = function()
+                exports.yecoyz_duty:OpenDuty()
+            end,
+        },
     }
 
     if GetConvar('qbx:enableGroupManagement', 'false') == 'true' then
