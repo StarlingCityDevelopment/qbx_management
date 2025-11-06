@@ -21,5 +21,17 @@ return {
             rotation = 0.0,
             type = 'job',
         },
+        cruisin = {
+            coords = vec3(-348.65, -1335.6, 36.25),
+            size = vec3(0.4, 0.5, 0.6),
+            rotation = 0.0,
+            type = 'job',
+        },
+        lscustoms = {
+            coords = vec3(-347.8, -130.6, 41.85),
+            size = vec3(0.7, 0.55, 0.4),
+            rotation = 340.75,
+            type = 'job',
+        },
     },
 }
