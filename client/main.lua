@@ -277,6 +277,9 @@ function OpenBossMenu(groupType)
             or string.upper(QBX.PlayerData.job.label),
         options = bossMenu,
         onExit = function()
+            if config.useTarget then
+                return
+            end
             lib.showTextUI(groupType == "gang" and locale("menu.gang_management") or locale("menu.boss_management"))
         end,
     })
