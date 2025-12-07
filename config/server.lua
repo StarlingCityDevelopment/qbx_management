@@ -33,5 +33,11 @@ return {
             rotation = 340.75,
             type = 'job',
         },
+		government = {
+			coords = vec3(-384.7, 1075.96, 334.9),
+			size = vec3(0.6, 0.6, 0.45),
+			rotation = 346.0,
+			type = "job",
+		},
     },
 }
