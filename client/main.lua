@@ -287,10 +287,9 @@ end
 exports("OpenBossMenu", OpenBossMenu)
 
 local function createZone(zoneInfo)
-    lib.zones.box({
+    lib.zones.sphere({
         coords = zoneInfo.coords,
-        size = zoneInfo.size or vec3(1.5, 1.5, 1.5),
-        rotation = zoneInfo.rotation or 0.0,
+        radius = 10.0,
         debug = config.debugPoly,
         onEnter = function(self)
             if not zoneInfo.groupName == QBX.PlayerData[zoneInfo.type].name and QBX.PlayerData[zoneInfo.type].isboss then
