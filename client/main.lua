@@ -295,7 +295,7 @@ local function createZone(zoneInfo)
         radius = 10.0,
         debug = config.debugPoly,
         onEnter = function(self)
-            if not zoneInfo.groupName == QBX.PlayerData[zoneInfo.type].name and QBX.PlayerData[zoneInfo.type].isboss then
+            if not (zoneInfo.groupName == QBX.PlayerData[zoneInfo.type].name and QBX.PlayerData[zoneInfo.type].isboss) then
                 return
             end
             self.interact = exports.sleepless_interact:addCoords(zoneInfo.coords, {
